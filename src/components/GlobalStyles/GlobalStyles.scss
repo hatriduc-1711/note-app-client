@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600&display=swap');
+
+:root {
+    --background-home-color: #eb4d4b;
+    --background-login-color: #313041;
+    --background-app-folder: #6ab04c;
+    --background-app-note: #dff9fb;
+    --active-folder-color: #dca928;
+    --active-note-color: #eb784b;
+    --letter-color: #313041;
+
+    --box-shadow: 0 0 20px rgba(0, 0, 0, 0.54);
+
+    --with-home-pc: 1000px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #70707095;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-family: 'Exo 2', sans-serif;
+}
+
+// tablet
+@media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+
+// mobile
+@media screen and (max-width: 46.1875em) {
+}

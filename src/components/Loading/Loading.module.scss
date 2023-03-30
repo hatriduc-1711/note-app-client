@@ -1,0 +1,24 @@
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--with-home-pc);
+    min-width: 100%;
+    min-height: 500px;
+    z-index: 10;
+
+    .icon_reload {
+        font-size: 40px;
+        color: #dd500e;
+        animation: loading 1s linear infinite;
+    }
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(360deg);
+    }
+    from {
+        transform: rotate(0deg);
+    }
+}

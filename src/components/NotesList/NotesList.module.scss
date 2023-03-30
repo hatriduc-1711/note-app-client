@@ -1,0 +1,96 @@
+.notes-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+
+    .notes-list-container {
+        background-color: var(--background-login-color);
+        padding: 10px 8px 15px 10px;
+
+        .notes-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dff9fbc6;
+            margin-bottom: 10px;
+            margin-right: 7px;
+
+            .notes-title {
+                font-size: 17px;
+                line-height: 20px;
+                color: #dff9fb;
+            }
+
+            .button-add-note {
+                display: flex;
+                align-items: center;
+                font-size: 22px;
+                color: #dff9fb;
+                transition: all 0.13s linear;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+
+        .notes-list {
+            height: 46vh;
+            overflow-y: auto;
+
+            .notes-item {
+                display: flex;
+                align-items: center;
+                height: 40px;
+                border-radius: 6px;
+                background-color: #00000044;
+                box-shadow: 0 2px 2px #2c2c2cdc;
+                margin-bottom: 8px;
+                margin-right: 5px;
+                transition: all 0.1s linear;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    height: 100%;
+                    width: 85%;
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: #dfdfdf;
+                    padding: 0 5px 0 12px;
+
+                    div {
+                        width: 100%;
+                        p {
+                            width: 100%;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                    }
+                }
+
+                &:hover {
+                    background-color: var(--active-note-color);
+                }
+
+                .delete-note {
+                    height: 100%;
+                    font-size: 17px;
+                    color: var(--active-folder-color);
+                    background-color: transparent;
+                    border: none;
+                    margin: 0 5px;
+                    cursor: pointer;
+                }
+            }
+
+            .active-note {
+                background-color: var(--active-note-color);
+                box-shadow: 0 2px 2px #2c2c2cdc;
+            }
+        }
+    }
+}

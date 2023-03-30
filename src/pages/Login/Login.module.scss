@@ -1,0 +1,88 @@
+.login-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(https://gaviaspreview.com/wp/tevily/wp-content/uploads/2021/09/bg-map-2.png);
+    background-color: var(--background-login-color);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+
+    .login-container {
+        height: 450px;
+        width: 500px;
+        border-radius: 10px;
+        background-color: #fff;
+        border: 1px solid #c6c6c6bd;
+        box-shadow: var(--box-shadow);
+        margin: 0 10px;
+        overflow: hidden;
+
+        .login-image {
+            height: 40%;
+            width: 100%;
+            object-fit: cover;
+            box-shadow: var(--box-shadow);
+        }
+
+        h1 {
+            position: relative;
+            text-align: center;
+            margin: 40px 0;
+
+            &::before {
+                position: absolute;
+                content: '';
+                height: 2px;
+                width: 20px;
+                // bottom: 0;
+                background-color: #e8604c;
+                border-radius: 10px;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                height: 2px;
+                width: 100px;
+                left: 34%;
+                bottom: -4px;
+                background-color: #e8604c;
+                border-radius: 10px;
+                transform: translateY(50%);
+            }
+        }
+
+        .login-btn {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                width: 75%;
+                font-size: 16px;
+                color: #3e3e3e;
+                background-color: #fff;
+                border-radius: 100px;
+                border: 1.5px solid #ababab;
+                margin-bottom: 15px;
+                transition: all 0.1s linear;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #dadada;
+                }
+
+                .icon-btn {
+                    font-size: 20px;
+                    color: #1746a4;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
