@@ -14,7 +14,7 @@ const authLink = setContext((_, { headers }) => {
         headers: {
             ...headers,
             authorization: `Bearer ${accessToken}`,
-            'Access-Control-Allow-Origin': 'https://profound-narwhal-854160.netlify.app',
+            'Access-Control-Allow-Origin': '*',
             Accept: 'application/json',
             'Content-Type': 'application/json',
         },
