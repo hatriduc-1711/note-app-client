@@ -2,8 +2,7 @@ import { ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
 const httpLink = createHttpLink({
-    // uri: process.env.URL_BACKEND,
-    uri: 'https://note-app-server-rdhc.onrender.com',
+    uri: 'https://note-app-server-rdhc.onrender.com/graphql',
 });
 
 const authLink = setContext((_, { headers }) => {
