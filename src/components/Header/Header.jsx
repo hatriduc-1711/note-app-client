@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import { useContext, useEffect, useRef, useState } from 'react';
+import { Navigate } from 'react-router-dom';
 
 import styles from './Header.module.scss';
 import { AuthContext } from '../../context/AuthProvider';
@@ -13,7 +14,8 @@ function Header() {
 
     const handleLogout = () => {
         auth.signOut();
-        window.location.reload();
+        // window.location.reload();
+        return <Navigate to="/login" />;
     };
 
     useEffect(() => {
