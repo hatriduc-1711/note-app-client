@@ -14,7 +14,7 @@ function Header() {
 
     const handleLogout = () => {
         auth.signOut();
-        // window.location.reload();
+        window.location.reload();
         return <Navigate to="/login" />;
     };
 
